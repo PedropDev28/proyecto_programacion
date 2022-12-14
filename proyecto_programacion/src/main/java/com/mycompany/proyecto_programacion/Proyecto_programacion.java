@@ -77,5 +77,18 @@ public class Proyecto_programacion {
         else
             System.out.println("Ninguna ciudad presenta crecimiento");
     }
+    
+    public static void mayornac(int M[][]) {
+        int mayor = M[0][0];
+        int indexFila = 0;
+        for (int f = 0; f < M.length; f++) {
+            if (M[f][0] > mayor) {
+                mayor = M[f][0];
+                indexFila = f;
+            }
+        }
+        System.out.println("La ciudad con mas nacimientos es " + Ciudad(indexFila));
+       
+    }
 }
 
